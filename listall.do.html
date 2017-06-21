@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港港网</title>
+    <meta name="keywords" content="港港网">
+    <meta name="description" content="物流电商港港网">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--add-layout.css-->
+    <link href="css/layout.css" rel="stylesheet">
+    <!--datepicker-->
+    <link href="css/plugins/datepick/need/laydate.css" rel="stylesheet">
+    <link href="css/plugins/datepick/skins/default/laydate.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!-- Imported styles on this page -->
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content index">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox float-e-margins public-list-1">
+                <!--00-->
+                <div class="alert alert-warning alert-remind" role="alert">我的计划提醒:
+                    <a href="#">待计划<span class="badge badge-danger pull-right">0</span></a>
+                    <a href="#">待提交<span class="badge badge-danger pull-right">0</span></a>
+                    <a href="#">待支付<span class="badge badge-danger pull-right">1</span></a>
+                </div>
+                <!--01-->
+                <div class="ibox-content">
+                    <div class="search-form">
+                        <form class="form-inline formline">
+                            <div class="line showmore">
+                                <div class="form-group moreline">
+                                    <label>作业码头：</label>
+                                    <select class="form-control" style="padding-right: 116px">
+                                        <option value="请选择">请选择</option>
+                                        <option value="中远码头">中远码头</option>
+                                        <option value="集团码头">集团码头</option>
+                                        <option value="新世纪码头">新世纪码头</option>
+                                        <option value="盘锦码头">盘锦码头</option>
+                                    </select>
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>放单单位：</label>
+                                    <input type="text" placeholder="请输入用户名" class="form-control">
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>企业添加时间：</label>
+                                    <input type="text" name="startTime" placeholder="选择日期" id="datetimepicker3"
+                                           class="form-control startTime"><span>-</span>
+                                    <input type="text" name="startTime" placeholder="选择日期" id="datetimepicker4"
+                                           class="form-control startTime">
+                                </div>
+                                <div class="form-group moreline showmore-btn">
+                                    <a href="#">更多查询条件<i class="fa fa-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="line showmore">
+                                <div class="form-group moreline">
+                                    <label>船名：</label>
+                                    <input type="text" placeholder="船名" class="form-control">
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>航次：</label>
+                                    <input type="text" placeholder="航次" class="form-control">
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>提单号：</label>
+                                    <input type="text" placeholder="提单号" class="form-control">
+                                </div>
+                            </div>
+                            <div class="line showmore">
+                                <div class="form-group moreline">
+                                    <label>箱号：</label>
+                                    <input type="text" placeholder="箱号" class="form-control">
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>平台计划号：</label>
+                                    <input type="text" placeholder="平台计划号" class="form-control">
+                                </div>
+                                <div class="form-group moreline">
+                                    <label>码头计划号：</label>
+                                    <input type="text" placeholder="码头计划号" class="form-control">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+                <!--02-->
+                <div class="ibox-content ibox-cont mg-t-15">
+                    <div class="tool">
+                        <button class="btn btn-primary">查询</button>
+                        <button class="btn btn-primary">清空</button>
+                        <button class="btn btn-primary">批量提交</button>
+                        <button class="btn btn-primary">批量结算</button>
+                    </div>
+                    <table class="table table-hover table-bordered table-striped listable" id="example-3">
+                        <thead>
+                        <tr class="replace-inputs">
+                            <th>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </th>
+                            <th>ID</th>
+                            <th>平台计划号</th>
+                            <th>码头计划号</th>
+                            <th>计划日期</th>
+                            <th>计划截至日期</th>
+                            <th>放单单位</th>
+                            <th>船航名次</th>
+                            <th>箱信息明细</th>
+                            <th>费用明细</th>
+                            <th>待计划状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--第一行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>01</td>
+                            <td><a href="#" data-toggle="modal" data-target="#myModal6">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a data-toggle="modal"
+                                                                                  data-target="#myModal5" href="#">(详情查看)</a>
+                                </p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#" data-toggle="modal" data-target="#myModal9">重做</a></td>
+                        </tr>
+                        <!--第二行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>02</td>
+                            <td><a href="#">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a href="#">(详情查看)</a></p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#">重做</a></td>
+                        </tr>
+                        <!--第三行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>03</td>
+                            <td><a href="#">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a href="#">(详情查看)</a></p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#">重做</a></td>
+                        </tr>
+                        <!--第四行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>04</td>
+                            <td><a href="#">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a href="#">(详情查看)</a></p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#">重做</a></td>
+                        </tr>
+                        <!--第五行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>05</td>
+                            <td><a href="#">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a href="#">(详情查看)</a></p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#">重做</a></td>
+                        </tr>
+                        <!--第六行-->
+                        <tr>
+                            <td>
+                                <div class="checkbox checkbox-primary">
+                                    <input type="checkbox">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td>06</td>
+                            <td><a href="#">XSTX201611050280</a></td>
+                            <td>908509</td>
+                            <td>2016-11-05 12:31</td>
+                            <td>2016-11-07 07:59</td>
+                            <td>泉州安通物流有限公司</td>
+                            <td>安盛22 / 1635</td>
+                            <td>
+                                <p>大箱:0个</p>
+                                <p>小箱:4个</p>
+                            </td>
+                            <td>
+                                <p>作业码头:集团码头</p>
+                                <p>费用总计:<span class="color-red">800.00</span>元 <a href="#">(详情查看)</a></p>
+                            </td>
+                            <td>待调度</td>
+                            <td><a href="#">重做</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!--弹窗 start-->
+                    <!--详情查看-->
+                    <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"
+                         aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg" style="width: 990px">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">费用明细</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="public-list-1">
+                                        <table class="table table-hover table-bordered table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="6">提箱计划号:XSTX201611050280</th>
+                                            </tr>
+                                            </thead>
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>费用科目</th>
+                                                <th>备注</th>
+                                                <th>费用单价</th>
+                                                <th>数量</th>
+                                                <th>费用金额</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <!--第一行-->
+                                            <tr>
+                                                <td>01</td>
+                                                <td>货物港务费【20'内贸普通重箱】</td>
+                                                <td>货物港务费【20'内贸普通重箱】</td>
+                                                <td>8.00</td>
+                                                <td>4.0</td>
+                                                <td><span class="color-red">32.00</span></td>
+                                            </tr>
+                                            <!--第二行-->
+                                            <tr>
+                                                <td>02</td>
+                                                <td>港口作业包干费【进出港：20'内贸普通进口重箱】</td>
+                                                <td>港口作业包干费【进出港：20'内贸普通进口重箱】</td>
+                                                <td>192.00</td>
+                                                <td>4.0</td>
+                                                <td><span class="color-red">768.00</span></td>
+                                            </tr>
+                                            <!--第三行-->
+                                            <tr>
+                                                <td colspan="5">小计</td>
+                                                <td><span class="color-red">800.00</span></td>
+                                            </tr>
+                                            <!--第四行-->
+                                            <tr>
+                                                <td colspan="5">合计总金额</td>
+                                                <td><span class="color-red">800.00</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--平台计划号-->
+                    <div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"
+                         aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg" style="width: 1330px">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">查看计划箱清单</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="public-list-1">
+                                        <div class="row">
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">平台计划号：</label>
+                                                <span class="col-sm-8">XSTX201611050280</span>
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">单据日期：</label>
+                                                <span class="col-sm-8">2016-11-05 12:31</span>
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">单据日期：</label>
+                                                <span class="col-sm-8">2016-11-07 07:59</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">放单号：</label>
+                                                <span class="col-sm-8">FD201611050057</span>
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">经办人：</label>
+                                                <span class="col-sm-8">陈庆辉</span>
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <label class="col-sm-4">单据日期：</label>
+                                                <span class="col-sm-8">2016-11-07 07:59</span>
+                                            </div>
+                                        </div>
+
+
+                                        <table class="table table-hover table-bordered table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>作业码头</th>
+                                                <th>船名</th>
+                                                <th>航次</th>
+                                                <th>提单号</th>
+                                                <th>箱号</th>
+                                                <th>箱型</th>
+                                                <th>箱型</th>
+                                                <th>空重(EF)</th>
+                                                <th>持箱人</th>
+                                                <th>超期时间</th>
+                                                <th>码头计划号</th>
+                                                <th>预约码</th>
+                                                <th>场箱位</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <!--第一行-->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>集团码头</td>
+                                                <td>安盛22</td>
+                                                <td>1635</td>
+                                                <td>ATQBYK16021664</td>
+                                                <td>CLHU3579069</td>
+                                                <td>GP</td>
+                                                <td>20'</td>
+                                                <td>重</td>
+                                                <td>ATC</td>
+                                                <td>2016-11-07 07:59</td>
+                                                <td>908509</td>
+                                                <td>3668039</td>
+                                                <td>7B5111</td>
+                                                <td><a href="#" data-toggle="modal" data-target="#myModal8">打印</a></td>
+                                            </tr>
+                                            <!--第二行-->
+                                            <tr>
+                                                <td>2</td>
+                                                <td>集团码头</td>
+                                                <td>安盛22</td>
+                                                <td>1635</td>
+                                                <td>ATQBYK16021664</td>
+                                                <td>CLHU3579069</td>
+                                                <td>GP</td>
+                                                <td>20'</td>
+                                                <td>重</td>
+                                                <td>ATC</td>
+                                                <td>2016-11-07 07:59</td>
+                                                <td>908509</td>
+                                                <td>3668039</td>
+                                                <td>7B5111</td>
+                                                <td><a href="#">打印</a></td>
+                                            </tr>
+                                            <!--第三行-->
+                                            <tr>
+                                                <td>3</td>
+                                                <td>集团码头</td>
+                                                <td>安盛22</td>
+                                                <td>1635</td>
+                                                <td>ATQBYK16021664</td>
+                                                <td>CLHU3579069</td>
+                                                <td>GP</td>
+                                                <td>20'</td>
+                                                <td>重</td>
+                                                <td>ATC</td>
+                                                <td>2016-11-07 07:59</td>
+                                                <td>908509</td>
+                                                <td>3668039</td>
+                                                <td>7B5111</td>
+                                                <td><a href="#">打印</a></td>
+                                            </tr>
+                                            <!--第四行-->
+                                            <tr>
+                                                <td>4</td>
+                                                <td>集团码头</td>
+                                                <td>安盛22</td>
+                                                <td>1635</td>
+                                                <td>ATQBYK16021664</td>
+                                                <td>CLHU3579069</td>
+                                                <td>GP</td>
+                                                <td>20'</td>
+                                                <td>重</td>
+                                                <td>ATC</td>
+                                                <td>2016-11-07 07:59</td>
+                                                <td>908509</td>
+                                                <td>3668039</td>
+                                                <td>7B5111</td>
+                                                <td><a href="#">打印</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal7">单箱信息打印
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">计划详情打印</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">导出</button>
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--平台计划号-全部打印详情-->
+                    <div class="modal inmodal fade" id="myModal7" tabindex="-1" role="dialog"
+                         aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg print" style="width: 970px">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">计划明细</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-hover table-bordered table-striped mg-b-20">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">营口港务集团有限公司</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">单箱信息查询<span
+                                                    class="color-red mg-l-15">尊敬的用户请认真核对，出现问题概不负责！</span></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--第一行-->
+                                        <tr>
+                                            <td>会员名称：</td>
+                                            <td>营口物信通达物流有限公司</td>
+                                        </tr>
+                                        <!--第二行-->
+                                        <tr>
+                                            <td>预约码：</td>
+                                            <td>3668039</td>
+                                        </tr>
+                                        <!--第三行-->
+                                        <tr>
+                                            <td>计划号：</td>
+                                            <td>908509</td>
+                                        </tr>
+                                        <!--第四行-->
+                                        <tr>
+                                            <td>提单号：</td>
+                                            <td>ATQBYK16021664（按箱号提箱</td>
+                                        </tr>
+                                        <!--第五行-->
+                                        <tr>
+                                            <td>箱号：</td>
+                                            <td> CLHU3579069</td>
+                                        </tr>
+                                        <!--第六行-->
+                                        <tr>
+                                            <td>箱型：</td>
+                                            <td>GP</td>
+                                        </tr>
+                                        <!--第七行-->
+                                        <tr>
+                                            <td>箱尺寸：</td>
+                                            <td>20'</td>
+                                        </tr>
+                                        <!--第八行-->
+                                        <tr>
+                                            <td>持箱人：</td>
+                                            <td>ATC</td>
+                                        </tr>
+                                        <!--第九行-->
+                                        <tr>
+                                            <td>船名/航次：</td>
+                                            <td>安盛22/1635</td>
+                                        </tr>
+                                        <!--第十行-->
+                                        <tr>
+                                            <td>超期时间：</td>
+                                            <td>2016-11-07 07:59:00.0</td>
+                                        </tr>
+                                        <!--第十一行-->
+                                        <tr>
+                                            <td>打印时间：</td>
+                                            <td> 2017-04-18 10:56</td>
+                                        </tr>
+                                        <!--第十二行-->
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-hover table-bordered table-striped mg-b-20">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">营口港务集团有限公司</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">单箱信息查询<span
+                                                    class="color-red mg-l-15">尊敬的用户请认真核对，出现问题概不负责！</span></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--第一行-->
+                                        <tr>
+                                            <td>会员名称：</td>
+                                            <td>营口物信通达物流有限公司</td>
+                                        </tr>
+                                        <!--第二行-->
+                                        <tr>
+                                            <td>预约码：</td>
+                                            <td>3668039</td>
+                                        </tr>
+                                        <!--第三行-->
+                                        <tr>
+                                            <td>计划号：</td>
+                                            <td>908509</td>
+                                        </tr>
+                                        <!--第四行-->
+                                        <tr>
+                                            <td>提单号：</td>
+                                            <td>ATQBYK16021664（按箱号提箱</td>
+                                        </tr>
+                                        <!--第五行-->
+                                        <tr>
+                                            <td>箱号：</td>
+                                            <td> CLHU3579069</td>
+                                        </tr>
+                                        <!--第六行-->
+                                        <tr>
+                                            <td>箱型：</td>
+                                            <td>GP</td>
+                                        </tr>
+                                        <!--第七行-->
+                                        <tr>
+                                            <td>箱尺寸：</td>
+                                            <td>20'</td>
+                                        </tr>
+                                        <!--第八行-->
+                                        <tr>
+                                            <td>持箱人：</td>
+                                            <td>ATC</td>
+                                        </tr>
+                                        <!--第九行-->
+                                        <tr>
+                                            <td>船名/航次：</td>
+                                            <td>安盛22/1635</td>
+                                        </tr>
+                                        <!--第十行-->
+                                        <tr>
+                                            <td>超期时间：</td>
+                                            <td>2016-11-07 07:59:00.0</td>
+                                        </tr>
+                                        <!--第十一行-->
+                                        <tr>
+                                            <td>打印时间：</td>
+                                            <td> 2017-04-18 10:56</td>
+                                        </tr>
+                                        <!--第十二行-->
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-hover table-bordered table-striped mg-b-20">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">营口港务集团有限公司</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">单箱信息查询<span
+                                                    class="color-red mg-l-15">尊敬的用户请认真核对，出现问题概不负责！</span></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--第一行-->
+                                        <tr>
+                                            <td>会员名称：</td>
+                                            <td>营口物信通达物流有限公司</td>
+                                        </tr>
+                                        <!--第二行-->
+                                        <tr>
+                                            <td>预约码：</td>
+                                            <td>3668039</td>
+                                        </tr>
+                                        <!--第三行-->
+                                        <tr>
+                                            <td>计划号：</td>
+                                            <td>908509</td>
+                                        </tr>
+                                        <!--第四行-->
+                                        <tr>
+                                            <td>提单号：</td>
+                                            <td>ATQBYK16021664（按箱号提箱</td>
+                                        </tr>
+                                        <!--第五行-->
+                                        <tr>
+                                            <td>箱号：</td>
+                                            <td> CLHU3579069</td>
+                                        </tr>
+                                        <!--第六行-->
+                                        <tr>
+                                            <td>箱型：</td>
+                                            <td>GP</td>
+                                        </tr>
+                                        <!--第七行-->
+                                        <tr>
+                                            <td>箱尺寸：</td>
+                                            <td>20'</td>
+                                        </tr>
+                                        <!--第八行-->
+                                        <tr>
+                                            <td>持箱人：</td>
+                                            <td>ATC</td>
+                                        </tr>
+                                        <!--第九行-->
+                                        <tr>
+                                            <td>船名/航次：</td>
+                                            <td>安盛22/1635</td>
+                                        </tr>
+                                        <!--第十行-->
+                                        <tr>
+                                            <td>超期时间：</td>
+                                            <td>2016-11-07 07:59:00.0</td>
+                                        </tr>
+                                        <!--第十一行-->
+                                        <tr>
+                                            <td>打印时间：</td>
+                                            <td> 2017-04-18 10:56</td>
+                                        </tr>
+                                        <!--第十二行-->
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-hover table-bordered table-striped mg-b-20">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">营口港务集团有限公司</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">单箱信息查询<span
+                                                    class="color-red mg-l-15">尊敬的用户请认真核对，出现问题概不负责！</span></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--第一行-->
+                                        <tr>
+                                            <td>会员名称：</td>
+                                            <td>营口物信通达物流有限公司</td>
+                                        </tr>
+                                        <!--第二行-->
+                                        <tr>
+                                            <td>预约码：</td>
+                                            <td>3668039</td>
+                                        </tr>
+                                        <!--第三行-->
+                                        <tr>
+                                            <td>计划号：</td>
+                                            <td>908509</td>
+                                        </tr>
+                                        <!--第四行-->
+                                        <tr>
+                                            <td>提单号：</td>
+                                            <td>ATQBYK16021664（按箱号提箱</td>
+                                        </tr>
+                                        <!--第五行-->
+                                        <tr>
+                                            <td>箱号：</td>
+                                            <td> CLHU3579069</td>
+                                        </tr>
+                                        <!--第六行-->
+                                        <tr>
+                                            <td>箱型：</td>
+                                            <td>GP</td>
+                                        </tr>
+                                        <!--第七行-->
+                                        <tr>
+                                            <td>箱尺寸：</td>
+                                            <td>20'</td>
+                                        </tr>
+                                        <!--第八行-->
+                                        <tr>
+                                            <td>持箱人：</td>
+                                            <td>ATC</td>
+                                        </tr>
+                                        <!--第九行-->
+                                        <tr>
+                                            <td>船名/航次：</td>
+                                            <td>安盛22/1635</td>
+                                        </tr>
+                                        <!--第十行-->
+                                        <tr>
+                                            <td>超期时间：</td>
+                                            <td>2016-11-07 07:59:00.0</td>
+                                        </tr>
+                                        <!--第十一行-->
+                                        <tr>
+                                            <td>打印时间：</td>
+                                            <td> 2017-04-18 10:56</td>
+                                        </tr>
+                                        <!--第十二行-->
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">打印</button>
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--平台计划号-单个打印详情-->
+                    <div class="modal inmodal fade" id="myModal8" tabindex="-1" role="dialog"
+                         aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-lg print" style="width: 970px">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">计划明细</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-hover table-bordered table-striped mg-b-20">
+                                        <thead>
+                                        <tr>
+                                            <th colspan="2">营口港务集团有限公司</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">单箱信息查询<span
+                                                    class="color-red mg-l-15">尊敬的用户请认真核对，出现问题概不负责！</span></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!--第一行-->
+                                        <tr>
+                                            <td>会员名称：</td>
+                                            <td>营口物信通达物流有限公司</td>
+                                        </tr>
+                                        <!--第二行-->
+                                        <tr>
+                                            <td>预约码：</td>
+                                            <td>3668039</td>
+                                        </tr>
+                                        <!--第三行-->
+                                        <tr>
+                                            <td>计划号：</td>
+                                            <td>908509</td>
+                                        </tr>
+                                        <!--第四行-->
+                                        <tr>
+                                            <td>提单号：</td>
+                                            <td>ATQBYK16021664（按箱号提箱</td>
+                                        </tr>
+                                        <!--第五行-->
+                                        <tr>
+                                            <td>箱号：</td>
+                                            <td> CLHU3579069</td>
+                                        </tr>
+                                        <!--第六行-->
+                                        <tr>
+                                            <td>箱型：</td>
+                                            <td>GP</td>
+                                        </tr>
+                                        <!--第七行-->
+                                        <tr>
+                                            <td>箱尺寸：</td>
+                                            <td>20'</td>
+                                        </tr>
+                                        <!--第八行-->
+                                        <tr>
+                                            <td>持箱人：</td>
+                                            <td>ATC</td>
+                                        </tr>
+                                        <!--第九行-->
+                                        <tr>
+                                            <td>船名/航次：</td>
+                                            <td>安盛22/1635</td>
+                                        </tr>
+                                        <!--第十行-->
+                                        <tr>
+                                            <td>超期时间：</td>
+                                            <td>2016-11-07 07:59:00.0</td>
+                                        </tr>
+                                        <!--第十一行-->
+                                        <tr>
+                                            <td>打印时间：</td>
+                                            <td> 2017-04-18 10:56</td>
+                                        </tr>
+                                        <!--第十二行-->
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">打印</button>
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--删除-->
+                    <div class="modal inmodal fade" id="myModal9" tabindex="-1" role="dialog"
+                         aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span
+                                            aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">提示</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">确定重做计划[XSTX201611050280]？</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--弹窗 end-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!--ickeck -radio js-->
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+<script src="js/plugins/validate/jquery.validate.min.js"></script>
+<script src="js/plugins/validate/messages_zh.min.js"></script>
+<script src="js/plugins/checkbox/jquery.tableCheckbox.js"></script>
+<script src="js/plugins/datepick/laydate.dev.js"></script>
+
+
+<!-- Bottom Scripts -->
+<script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+<!-- Imported scripts on this page -->
+<script src="assets/js/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+<script src="assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+<!--main.js-->
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(function ($) {
+        //选择日期
+        laydate({
+            elem: '#datetimepicker3'
+        });
+        laydate({
+            elem: '#datetimepicker4'
+        });
+
+
+        //表格内容修改
+        $('#example-3').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "每页显示 _MENU_ 条记录",
+                "sZeroRecords": "抱歉， 没有找到",
+                "sInfo": "显示 _START_ 到 _END_ 项/共 _TOTAL_ 项",
+                "sInfoEmpty": "没有数据",
+                "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+                'sSearch': '查找:',
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "前一页",
+                    "sNext": "后一页",
+                    "sLast": "尾页"
+                },
+                "sZeroRecords": "没有检索到数据",
+                "sProcessing": "<img src='./loading.gif' />"
+            }
+        });
+
+        $("#example-3").dataTable().yadcf([
+            {column_number: 1},
+            {column_number: 2, filter_type: 'text', placeholder: '选择ID'},
+            {column_number: 3, filter_type: 'text'},
+            {column_number: 4},
+            {column_number: 5, filter_type: 'text'},
+            {column_number: 6, filter_type: 'text'},
+            {column_number: 7, filter_type: 'text'},
+            {column_number: 8, filter_type: 'text'},
+            {column_number: 9, filter_type: 'text'},
+            {column_number: 10},
+        ]);
+
+        //dataTables
+        $('#example-3_wrapper .row:first-child').hide();
+        $('.dataTables_length').insertAfter('.dataTables_info');
+
+    });
+</script>
+</body>
+</html>

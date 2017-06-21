@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港港网</title>
+    <meta name="keywords" content="港港网">
+    <meta name="description" content="物流电商港港网">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <!--add-layout.css-->
+    <link href="css/layout.css" rel="stylesheet">
+
+    <!-- Imported styles on this page -->
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content index">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox float-e-margins">
+                <!--选项卡标题-->
+                <div class="tabs-container ibox-content">
+                    <ul class="nav nav-tabs nav-tab-01">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">店员管理</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">店员权限管理</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--选项卡内容-->
+                <div class="tabs-container ibox-content ibox-cont one-tab">
+
+                    <div class="tab-content">
+
+                        <!--店员管理-->
+                        <div id="tab-1" class="tab-pane active public-list-1">
+                            <!--01-->
+                            <!-- Custom column filtering -->
+                            <div class="tool">
+                                <button type="button" class="btn btn-primary xinzeng" data-toggle="modal" data-target="#myModal5">新增</button>
+                            </div>
+
+                            <table class="table table-hover table-striped table-bordered infocont" id="example-3">
+                                <thead>
+                                <tr class="replace-inputs">
+                                    <th width="5%">序号</th>
+                                    <th>姓名</th>
+                                    <th>登录名</th>
+                                    <th>手机号</th>
+                                    <th>部门</th>
+                                    <th width="22%">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <!--第一行-->
+                                <tr>
+                                    <td>01</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司1</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal6">激活</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第二行-->
+                                <tr>
+                                    <td>02</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司2</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第三行-->
+                                <tr>
+                                    <td>03</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司3</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第四行-->
+                                <tr>
+                                    <td>04</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司4</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第五行-->
+                                <tr>
+                                    <td>05</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司5</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第六行-->
+                                <tr>
+                                    <td>06</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司6</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal8">冻结</a>
+                                        <a href="#tab-2" data-toggle="tab" aria-expanded="true">权限管理</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal9">修改</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModa20">重置密码</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第一行-->
+                                <tr>
+                                    <td>07</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司7</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal6">激活</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第二行-->
+                                <tr>
+                                    <td>08</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司8</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第三行-->
+                                <tr>
+                                    <td>09</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司9</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第四行-->
+                                <tr>
+                                    <td>10</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司10</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第五行-->
+                                <tr>
+                                    <td>11</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第六行-->
+                                <tr>
+                                    <td>12</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal8">冻结</a>
+                                        <a href="#tab-2" data-toggle="tab" aria-expanded="true">权限管理</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal9">修改</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModa20">重置密码</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第一行-->
+                                <tr>
+                                    <td>13</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal6">激活</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第二行-->
+                                <tr>
+                                    <td>14</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第三行-->
+                                <tr>
+                                    <td>15</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第四行-->
+                                <tr>
+                                    <td>16</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第五行-->
+                                <tr>
+                                    <td>17</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司</td>
+                                    <td>
+                                        <a href="#">激活</a>
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr>
+                                <!--第六行-->
+                                <tr>
+                                    <td>18</td>
+                                    <td>物信通达</td>
+                                    <td>wxtd</td>
+                                    <td>13804174780</td>
+                                    <td>公司6</td>
+                                    <td>
+                                        <a href="#" data-toggle="modal" data-target="#myModal8">冻结</a>
+                                        <a href="#tab-2" data-toggle="tab" aria-expanded="true">权限管理</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal9">修改</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModa20">重置密码</a>
+                                        <a href="#" data-toggle="modal" data-target="#myModal7">删除</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!--弹窗 start-->
+                            <!--新增-->
+                            <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span>
+                                                <span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">新增店员</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal m-t" id="signupForm">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">登录名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="username" name="username" class="form-control"
+                                                               type="text" aria-required="true" aria-invalid="true"
+                                                               class="error">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">姓名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="firstname" name="firstname" class="form-control"
+                                                               type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">手机：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="phone" name="phone" class="form-control"
+                                                               type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">密码：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="password" name="password" class="form-control"
+                                                               type="password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">确认密码：</label>
+                                                    <div class="col-sm-8">
+                                                        <input id="confirm_password" name="confirm_password"
+                                                               class="form-control" type="password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-8 col-sm-offset-3">
+                                                        <button class="btn btn-primary addcont" type="submit">保存
+                                                        </button>
+                                                        <button type="button" class="btn btn-white"
+                                                                data-dismiss="modal">关闭
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--激活-->
+                            <div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">提示</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-center">确定要激活该店员吗？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--删除-->
+                            <div class="modal inmodal fade" id="myModal7" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">提示</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-center">确定要删除该店员吗？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--冻结-->
+                            <div class="modal inmodal fade" id="myModal8" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">提示</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-center">确定要冻结该店员吗？</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                            <button type="button" class="btn btn-primary">保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--修改-->
+                            <div class="modal inmodal fade" id="myModal9" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">修改店员</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal m-t">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label"><i class="color-red">*</i>登录名：</label>
+                                                    <div class="col-sm-8">
+                                                        <p class="form-control-static">wxtd_xy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label"><i class="color-red">*</i>姓名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input name="" class="form-control" value="小雨" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label"><i class="color-red">*</i>手机：</label>
+                                                    <div class="col-sm-8">
+                                                        <input name="" class="form-control" value="13313062725"
+                                                               type="text"
+                                                               aria-required="true" aria-invalid="false"
+                                                               class="valid">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-8 col-sm-offset-3">
+                                                        <button class="btn btn-primary" type="submit">修改</button>
+                                                        <button type="button" class="btn btn-white"
+                                                                data-dismiss="modal">关闭
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--重置密码-->
+                            <div class="modal inmodal fade" id="myModa20" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span>
+                                                <span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">新增店员</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal m-t" id="register2">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">登录名：</label>
+                                                    <div class="col-sm-8">
+                                                        <input name="username" class="form-control"
+                                                               type="text" aria-required="true" aria-invalid="true"
+                                                               class="error">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">新密码：</label>
+                                                    <div class="col-sm-8">
+                                                        <input name="password1" class="form-control" id="password1">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">确认密码：</label>
+                                                    <div class="col-sm-8">
+                                                        <input name="password2" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-8 col-sm-offset-3">
+                                                        <button class="btn btn-primary" type="submit">提交</button>
+                                                        <button type="button" class="btn btn-white"
+                                                                data-dismiss="modal">关闭
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--弹窗 end-->
+                        </div>
+
+                        <!--店员权限管理-->
+                        <div id="tab-2" class="tab-pane public-list-2">
+                            <div class="caozuo">
+                                <form role="form" class="form-inline">
+                                    <div class="form-group">
+                                        <label>操作员：</label>
+                                        <select class="form-control">
+                                            <option value="小明">小明</option>
+                                            <option value="小栋">小栋</option>
+                                            <option value="小明">小西</option>
+                                            <option value="小蓝">小蓝</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary">保存</button>
+                                        <label class="color-red">该操作员为管理员，不允许修改其权限。</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="tabs-container second-tab">
+                                    <div class="tabs-left">
+                                        <ul class="nav nav-tabs">
+                                            <li><a data-toggle="tab" href="#tab-3">单据平台</a></li>
+                                            <li><a data-toggle="tab" href="#tab-4" aria-expanded="false">交易服务</a></li>
+                                            <li><a data-toggle="tab" href="#tab-5" aria-expanded="false">港融运贷通</a></li>
+                                            <li class="active"><a data-toggle="tab" href="#tab-6"
+                                                                  aria-expanded="true">设置中心</a></li>
+                                            <li><a data-toggle="tab" href="#tab-7" aria-expanded="false">EDI系统</a></li>
+                                            <li><a data-toggle="tab" href="#tab-8" aria-expanded="false">集装箱平台</a></li>
+                                            <li><a data-toggle="tab" href="#tab-9" aria-expanded="false">预录入系统</a></li>
+                                            <li><a data-toggle="tab" href="#tab-10" aria-expanded="false">船舶服务</a></li>
+                                            <li><a data-toggle="tab" href="#tab-11" aria-expanded="false">货代系统</a></li>
+                                            <li><a data-toggle="tab" href="#tab-12" aria-expanded="false">订舱</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tab-3" class="tab-pane">
+                                                <div class="panel-body">3</div>
+                                            </div>
+                                            <div id="tab-4" class="tab-pane">
+                                                <div class="panel-body">4</div>
+                                            </div>
+                                            <div id="tab-5" class="tab-pane">
+                                                <div class="panel-body">5</div>
+                                            </div>
+                                            <div id="tab-6" class="tab-pane active">
+                                                <div class="panel-body">
+                                                    <table class="table table-hover">
+                                                        <!--1-->
+                                                        <thead id="tab_01">
+                                                        <th colspan="6">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input type="checkbox" id="ckSelectAll1">
+                                                                <label>商铺管理</label>
+                                                            </div>
+                                                        </th>
+                                                        </thead>
+                                                        <tbody id="tbpage1">
+                                                        <tr>
+                                                            <td>基本设置</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox" checked="">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>编辑</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>续卖</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>商铺模板</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>信息维护</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>编辑</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        </tbody>
+
+
+                                                        <!--2-->
+                                                        <thead id="tab_02">
+                                                        <th colspan="6">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input type="checkbox" id="ckSelectAll2">
+                                                                <label>短信订阅</label>
+                                                            </div>
+                                                        </th>
+                                                        </thead>
+                                                        <tbody id="tbpage2">
+                                                        <tr>
+                                                            <td>短信订阅</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        </tbody>
+
+                                                        <!--3-->
+                                                        <thead id="tab_03">
+                                                        <th colspan="6">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input type="checkbox" id="ckSelectAll3">
+                                                                <label>基本管理</label>
+                                                            </div>
+                                                        </th>
+                                                        </thead>
+                                                        <tbody id="tbpage3">
+                                                        <tr>
+                                                            <td>店员管理
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>新增修改</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>冻结解冻</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>密码重置</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>权限分配</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>会员费缴纳</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>缴纳会员费</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>我的消息</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>实时信息维护</td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>查看</label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <label>增删改</label>
+                                                                </div>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                            <div id="tab-7" class="tab-pane">
+                                                <div class="panel-body">6</div>
+                                            </div>
+                                            <div id="tab-8" class="tab-pane">
+                                                <div class="panel-body">7</div>
+                                            </div>
+                                            <div id="tab-9" class="tab-pane">
+                                                <div class="panel-body">8</div>
+                                            </div>
+                                            <div id="tab-10" class="tab-pane">
+                                                <div class="panel-body">9</div>
+                                            </div>
+                                            <div id="tab-11" class="tab-pane">
+                                                <div class="panel-body">10</div>
+                                            </div>
+                                            <div id="tab-12" class="tab-pane">
+                                                <div class="panel-body">11</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!--ickeck -radio js-->
+<script src="js/plugins/checkbox/jquery.tableCheckbox.js"></script>
+<script src="js/plugins/validate/jquery.validate.min.js"></script>
+<script src="js/plugins/validate/messages_zh.min.js"></script>
+<script src="js/demo/form-validate-demo.min.js"></script>
+
+<!--main.js-->
+<script src="js/main.js"></script>
+
+<!-- Bottom Scripts -->
+<script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+<!-- Imported scripts on this page -->
+<script src="assets/js/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+<script src="assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+<script type="text/javascript">
+
+    $(function ($) {
+        $('#register2').validate({
+            rules: {
+                username: {
+                    required: true
+                },
+                password1: {
+                    required: true,
+                    rangelength: [6, 10]
+                },
+                password2: {
+                    required: true,
+                    equalTo: '#password1'
+                }
+            },
+            messages: {
+                username: {
+                    required: '请输入用户名'
+                },
+                password1: {
+                    required: '请设置新密码',
+                    rangelength: '密码位数为6到10位'
+                },
+                password2: {
+                    required: '请再次确认密码',
+                    equalTo: '两次输入密码不相符'
+                }
+            }
+        });
+
+        //表格内容修改
+        $('#example-3').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "每页显示 _MENU_ 条记录",
+                "sZeroRecords": "抱歉， 没有找到",
+                "sInfo": "显示 _START_ 到 _END_ 项/共 _TOTAL_ 项",
+                "sInfoEmpty": "没有数据",
+                "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+                'sSearch': '查找:',
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "前一页",
+                    "sNext": "后一页",
+                    "sLast": "尾页"
+                },
+                "sZeroRecords": "没有检索到数据",
+
+            }
+        });
+
+        $("#example-3").dataTable().yadcf([
+            {column_number: 0},
+            {column_number: 1, filter_type: 'text'},
+            {column_number: 2, filter_type: 'text'},
+            {column_number: 3, filter_type: 'text'},
+            {column_number: 4},
+            {column_number: 5, filter_type: 'text'},
+        ]);
+
+        //dataTables
+        $('#example-3_wrapper .row:first-child').hide();
+        $('.dataTables_length').insertAfter('.dataTables_info');
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

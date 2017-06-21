@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港港网</title>
+    <meta name="keywords" content="港港网">
+    <meta name="description" content="物流电商港港网">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--add-layout.css-->
+    <link href="css/layout.css" rel="stylesheet">
+
+    <!-- Imported styles on this page -->
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content index">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox float-e-margins">
+                <div class="tabs-container ibox-content one-tab">
+                    <ul class="nav nav-tabs nav-tab-01">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">短信订阅</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">资源点管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-container">
+
+                    <div class="tab-content">
+
+                        <!--短信订阅-->
+                        <div id="tab-1" class="tab-pane active public-list-1">
+                            <!--01-->
+                            <div class="ibox-content show">
+                                <form class="form-inline">
+
+                                    <div class="form-group">
+                                        <label>当前用户：</label>
+                                        <p class="form-control-static"><span>0</span>点</p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>可用短信资源点：</label>
+                                        <p class="form-control-static"><span>物信通达</span></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>当前手机：</label>
+                                        <p class="form-control-static"><span>13804174780</span></p>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary"><a href="personal-password.html">修改手机号码</a>
+                                    </button>
+
+                                </form>
+                            </div>
+
+                            <!--02-->
+                            <div class="ibox-content ibox-cont mg-t-10">
+                                <table class="table table-hover table-bordered table-striped" id="example-3">
+                                    <thead>
+                                    <tr class="replace-inputs">
+                                        <th>ID</th>
+                                        <th>订阅项</th>
+                                        <th>描述</th>
+                                        <th>费用</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--第一行-->
+                                    <tr>
+                                        <td>01</td>
+                                        <td>基础消息</td>
+                                        <td>当会员发生合同订立、货物或票据异议。</td>
+                                        <td>
+                                            <p>单条：1点/条</p>
+                                            <p>包年：360点/项/年</p>
+                                        </td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第二行-->
+                                    <tr>
+                                        <td>02</td>
+                                        <td>资金类消息</td>
+                                        <td>由会员指定需要接收提醒消息的商品基本信息，平台会在商品出现挂牌价下跌时提醒会员。</td>
+                                        <td>单条：1点/条</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第三行-->
+                                    <tr>
+                                        <td>03</td>
+                                        <td>最低挂牌价消息</td>
+                                        <td>当会员发生账户资金变动、支付密码变更或设置时提醒。</td>
+                                        <td>
+                                            <p>单条：1点/条</p>
+                                            <p>包年：650点/项/年</p>
+                                        </td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第四行-->
+                                    <tr>
+                                        <td>04</td>
+                                        <td>融资管理</td>
+                                        <td>融资状态发生变动时提醒</td>
+                                        <td>免费</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第五行-->
+                                    <tr>
+                                        <td>05</td>
+                                        <td>运力短信</td>
+                                        <td>运单状态发生变动时提醒</td>
+                                        <td>单条：1点/条</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第六行-->
+                                    <tr>
+                                        <td>06</td>
+                                        <td>集装箱受理</td>
+                                        <td>放箱和提箱计划状态变化时提醒</td>
+                                        <td>免费</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第七行-->
+                                    <tr>
+                                        <td>07</td>
+                                        <td>船舶服务</td>
+                                        <td>预报船和装船清单状态变化提醒</td>
+                                        <td>免费</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    <!--第八行-->
+                                    <tr>
+                                        <td>08</td>
+                                        <td>手机平台</td>
+                                        <td>验证码</td>
+                                        <td>免费</td>
+                                        <td>未订阅</td>
+                                        <td><a href="#" data-toggle="modal" data-target="#myModal9">订阅</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <!--弹窗 start-->
+                                <!--订阅-->
+                                <div class="modal inmodal fade" id="myModal9" tabindex="-1" role="dialog"
+                                     aria-hidden="true" data-backdrop="static">
+                                    <div class="modal-dialog modal-lg" style="width: 970px">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    <span class="sr-only">Close</span>
+                                                </button>
+                                                <h4 class="modal-title">订阅新增</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="public-list-1">
+                                                    <table class="table table-hover table-bordered table-striped">
+                                                        <tbody>
+                                                        <!--第一行-->
+                                                        <tr>
+                                                            <td>名称：</td>
+                                                            <td>基础消息</td>
+                                                        </tr>
+                                                        <!--第二行-->
+                                                        <tr>
+                                                            <td>费用：</td>
+                                                            <td>单条：1点/条</td>
+                                                        </tr>
+                                                        <!--第三行-->
+                                                        <tr>
+                                                            <td>描述：</td>
+                                                            <td>当会员发生合同订立、货物或票据异议。</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary" data-dismiss="modal">确定
+                                                </button>
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">关闭
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--弹窗 end-->
+                            </div>
+
+                        </div>
+
+                        <!--资源点管理-->
+                        <div id="tab-2" class="tab-pane public-list-1 public-list-2">
+
+                            <!--资源点管理-->
+                            <div class="ibox-content mg-t-20" id="dfinfo_01">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead>
+                                    <th colspan="2">资源点管理</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>您已购资源点总数：</td>
+                                        <td>0点</td>
+                                    </tr>
+                                    <tr>
+                                        <td>您可用资源点数为：</td>
+                                        <td>0点</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button type="button" class="btn btn-primary dfinfo_btn">兑换信息资源</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!--兑换信息资源-->
+                            <div class="ibox-content mg-t-20" id="dfinfo_02" style="display: none">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead>
+                                    <th colspan="2">兑换短信资源点</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>平台兑换比：</td>
+                                        <td>1元兑换10资源点</td>
+                                    </tr>
+                                    <tr>
+                                        <td>类型：</td>
+                                        <td>现金购买</td>
+                                    </tr>
+                                    <tr>
+                                        <td>请选择兑换额度：</td>
+                                        <td>
+                                            <form id="action-mon">
+                                                <input type="radio" name="money" value="">30元
+                                                <input type="radio" name="money" value="">50元
+                                                <input type="radio" name="money" value="">100元
+                                                <input type="radio" name="money" value="">其他<input type="text"
+                                                                                                   disabled="disabled">元
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>本次点数：</td>
+                                        <td>300点</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button type="button" class="btn btn-primary next-step" data-toggle="modal">
+                                                下一步
+                                            </button>
+                                            <button type="button" class="btn btn-primary return">返回</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!--兑换短信资源点-->
+                            <div class="ibox-content mg-t-20" id="dfinfo_03" style="display: none">
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead>
+                                    <th colspan="2">兑换短信资源点</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>平台兑换比：</td>
+                                        <td>1元兑换10资源点</td>
+                                    </tr>
+                                    <tr>
+                                        <td>类型：</td>
+                                        <td>现金购买</td>
+                                    </tr>
+                                    <tr>
+                                        <td>本次点数：</td>
+                                        <td>300点</td>
+                                    </tr>
+                                    <tr>
+                                        <td>需支付金额：</td>
+                                        <td>30.00元</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button type="submit" class="btn btn-primary">提交</button>
+                                            <button type="button" class="btn btn-primary return">返回</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!--弹窗提示-->
+                            <div class="modal inmodal fade" id="myModal1" tabindex="-1" role="dialog"
+                                 aria-hidden="true" data-backdrop="static">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">信息</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-center">请选择兑换额度</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">确定
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--main.js-->
+<script src="js/main.js"></script>
+
+<!-- Bottom Scripts -->
+<script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+<!-- Imported scripts on this page -->
+<script src="assets/js/datatables/dataTables.bootstrap.js"></script>
+<script src="assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+<script src="assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $('#example-3').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "每页显示 _MENU_ 条记录",
+                "sZeroRecords": "抱歉， 没有找到",
+                "sInfo": "显示 _START_ 到 _END_ 项/共 _TOTAL_ 项",
+                "sInfoEmpty": "没有数据",
+                "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+                'sSearch': '查找:',
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "前一页",
+                    "sNext": "后一页",
+                    "sLast": "尾页"
+                },
+                "sZeroRecords": "没有检索到数据",
+            }
+        });
+
+
+//        $("#example-3").dataTable().yadcf([
+//            {column_number: 0},
+//            {column_number: 1},
+//            {column_number: 2, filter_type: 'text'},
+//            {column_number: 3, filter_type: 'text'},
+//            {column_number: 4},
+//            {column_number: 5, filter_type: 'text'},
+//        ]);
+
+        //dataTables
+        $('#example-3_wrapper .row:first-child').hide();
+        $('.dataTables_length').insertAfter('.dataTables_info');
+    });
+
+</script>
+
+</body>
+
+</html>

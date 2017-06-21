@@ -1,0 +1,325 @@
+.table.table-bordered {
+  border-color: #eeeeee;
+}
+.table.table-bordered > thead > tr > td,
+.table.table-bordered > tbody > tr > td,
+.table.table-bordered > tfood > tr > td,
+.table.table-bordered > thead > tr > th,
+.table.table-bordered > tbody > tr > th,
+.table.table-bordered > tfood > tr > th {
+  border-color: #eeeeee;
+}
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfood > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfood > tr > th {
+  padding: 12px 15px;
+}
+.text-center.table > thead > tr > td,
+.text-center.table > tbody > tr > td,
+.text-center.table > tfood > tr > td,
+.text-center.table > thead > tr > th,
+.text-center.table > tbody > tr > th,
+.text-center.table > tfood > tr > th {
+  text-align: center !important;
+}
+.middle-align.table > thead > tr > td,
+.middle-align.table > tbody > tr > td,
+.middle-align.table > tfood > tr > td,
+.middle-align.table > thead > tr > th,
+.middle-align.table > tbody > tr > th,
+.middle-align.table > tfood > tr > th {
+  vertical-align: middle;
+}
+.table > thead > tr > td.middle-align,
+.table > tbody > tr > td.middle-align,
+.table > tfood > tr > td.middle-align,
+.table > thead > tr > th.middle-align,
+.table > tbody > tr > th.middle-align,
+.table > tfood > tr > th.middle-align {
+  vertical-align: middle;
+}
+.table > thead > tr.no-borders > td,
+.table > tbody > tr.no-borders > td,
+.table > tfood > tr.no-borders > td,
+.table > thead > tr.no-borders > th,
+.table > tbody > tr.no-borders > th,
+.table > tfood > tr.no-borders > th {
+  border-left: 0;
+  border-right: 0;
+}
+.table > thead > tr > td,
+.table > thead > tr > th {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  color: #2c2e2f;
+}
+.table > thead > tr > td:after,
+.table > thead > tr > th:after {
+  content: '';
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  height: 1px;
+  background-color: #eeeeee;
+}
+.table > tbody > tr > td,
+.table > tfoot > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  border-top: 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.table > tbody > tr > td .progress,
+.table > tfoot > tr > td .progress,
+.table > tbody > tr > th .progress,
+.table > tfoot > tr > th .progress,
+.table > tbody > tr > td .btn,
+.table > tfoot > tr > td .btn,
+.table > tbody > tr > th .btn,
+.table > tfoot > tr > th .btn {
+  margin-bottom: 0;
+}
+.table > tfoot > tr > td,
+.table > tfoot > tr > th {
+  border-left: 0;
+  border-bottom: 0;
+  border-top: 1px solid #eeeeee;
+  padding: 12px 15px;
+  position: relative;
+  color: #2c2e2f;
+}
+.table > tfoot > tr > td:after,
+.table > tfoot > tr > th:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1px;
+  height: 1px;
+  background-color: #eeeeee;
+}
+.table.table-condensed > thead > tr > td,
+.table.table-condensed > tbody > tr > td,
+.table.table-condensed > tfoot > tr > td,
+.table.table-condensed > thead > tr > th,
+.table.table-condensed > tbody > tr > th,
+.table.table-condensed > tfoot > tr > th {
+  padding: 5px 8px;
+}
+.table.table-model-2 > thead > tr {
+  background: #f6f6f6;
+}
+.table.table-model-2 > thead > tr > td:after,
+.table.table-model-2 > thead > tr > th:after {
+  display: none;
+}
+.table.table-model-2 > thead > tr > td,
+.table.table-model-2 > tbody > tr > td,
+.table.table-model-2 > tfood > tr > td,
+.table.table-model-2 > thead > tr > th,
+.table.table-model-2 > tbody > tr > th,
+.table.table-model-2 > tfood > tr > th {
+  border-color: #dddddd;
+}
+.table.table-model-2.table-bordered {
+  border-color: #dddddd;
+}
+.table tbody.middle-align > tr > th,
+.table tbody.middle-align > tr > td {
+  vertical-align: middle;
+}
+.panel > .table > thead > tr > td:after,
+.panel > .table > thead > tr > th:after {
+  display: none;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  padding-bottom: 5px;
+  color: #777;
+}
+.dataTables_wrapper .dataTables_filter .form-control {
+  margin-left: 10px;
+}
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  /*padding-top: 10px;*/
+}
+.dataTables_wrapper .DTTT_container {
+  float: right;
+  border: 1px solid #eeeeee;
+  position: relative;
+  margin-top: -2px;
+  margin-left: 20px;
+}
+.dataTables_wrapper .DTTT_container + .dataTables_filter {
+  float: right;
+}
+.dataTables_wrapper .DTTT_container .DTTT_button {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 7px 10px;
+}
+.dataTables_wrapper .DTTT_container .DTTT_button span {
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.dataTables_wrapper .DTTT_container .DTTT_button:hover {
+  background: #f5f5f5;
+}
+.dataTables_wrapper .DTTT_container .DTTT_button:hover div {
+  background: #f5f5f5;
+}
+.dataTables_wrapper .DTTT_container .DTTT_button + .DTTT_button {
+  border-left: 1px solid #eeeeee;
+}
+.dataTables_wrapper table.dataTable thead > tr > th {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dataTables_wrapper tr.replace-inputs {
+  background: #fff;
+}
+.dataTables_wrapper tr.replace-inputs > th,
+.dataTables_wrapper tr.replace-inputs > td {
+  vertical-align: top;
+}
+.dataTables_wrapper tr .dataTables_empty {
+  border-bottom: 1px solid #eeeeee;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper {
+  position: relative;
+  margin-top: 10px;
+  border-top: 1px solid #eeeeee;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: block;
+  padding: 10px 15px;
+  padding-bottom: 0;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-reset-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 5px;
+  padding-top: 0;
+  background: #f5f5f5;
+  color: #979898;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 11px;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-reset-button:active,
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-reset-button:focus {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper:hover .yadcf-filter-reset-button {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 4px 0px;
+  color: #999;
+  font-weight: normal;
+  border: 1px solid #e4e4e4;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter[type="text"] {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  font-weight: normal;
+  outline: none;
+  padding: 0 10px;
+  height: 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-wrapper-inner {
+  display: table;
+  width: 100%;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-wrapper-inner .yadcf-filter-range {
+  display: table-cell;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  font-weight: normal;
+  outline: none;
+  padding: 0 5px;
+  height: 32px;
+  text-align: center;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-wrapper-inner .yadcf-filter-range-number-seperator {
+  padding: 0 5px;
+  display: table-cell;
+  width: 10%;
+}
+.dataTables_wrapper tr .yadcf-filter-wrapper .yadcf-filter-wrapper-inner .yadcf-filter-range-number-seperator:after {
+  content: '–';
+  color: #979898;
+  font-size: 11px;
+  font-weight: normal;
+}
+.dataTables_wrapper .table thead > tr .sorting,
+.dataTables_wrapper .table thead > tr .sorting_asc,
+.dataTables_wrapper .table thead > tr .sorting_desc {
+  background: none;
+}
+.dataTables_wrapper .table thead > tr .sorting:before,
+.dataTables_wrapper .table thead > tr .sorting_asc:before,
+.dataTables_wrapper .table thead > tr .sorting_desc:before {
+  font-family: 'fontawesome';
+  content: '\f0dc';
+  float: right;
+  display: block;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.dataTables_wrapper .table thead > tr .sorting_asc:before {
+  content: '\f0de';
+}
+.dataTables_wrapper .table thead > tr .sorting_desc:before {
+  content: '\f0dd';
+}
+.dataTables_wrapper .table thead > tr .no-sorting:before {
+  display: none;
+}
+
+
+
+.dataTables_length .form-control {
+  /*border-radius: 4px;*/
+  padding: 4px 8px;
+}

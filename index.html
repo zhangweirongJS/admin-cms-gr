@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>港港网</title>
+    <meta name="keywords" content="港港网">
+    <meta name="description" content="物流电商港港网">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="refresh" content="0;ie.html"/>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--public-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+<div id="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="nav-close"><i class="fa fa-times-circle"></i>
+        </div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <img alt="image" src="img/logo_1.png" style="width: 100%"/>
+                    </div>
+                    <div class="logo-element">
+                        <img alt="image" src="img/logo_2.png"/>
+                    </div>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="list.do.html"><i class="fa fa-home"></i> <span
+                            class="nav-label">主页</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-cog"></i> <span class="nav-label">设置中心</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>商铺管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">基本设置</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">商铺模板</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">信息维护</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>短信订阅 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="sms.html" class="J_menuItem">短信订阅</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>基本管理 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="list.do.html" class="J_menuItem">店员管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">会员费缴纳</a>
+                                </li>
+                                <li>
+                                    <a href="info-list.html" class="J_menuItem">实时信息维护</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我的消息</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>基本设置 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="info.do.html" class="J_menuItem">公司信息</a>
+                                </li>
+                                <li>
+                                    <a href="personal-password.html" class="J_menuItem">个人密码</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">单据平台</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>单据管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">设备交接单管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">订单管理</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa fa-bar-chart-o"></i><span class="nav-label">交易服务</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>我是买家<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">洽谈管理</a>
+                                </li>
+                                <li>
+                                    <a href="procurement.html" class="J_menuItem">采购合同</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">竞拍选购</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">提单管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">应付款管理</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>我是卖家<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">销售发布</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">挂牌管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">洽谈管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">竞拍管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">销售合同</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">提单管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">应付款管理</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-yen"></i> <span class="nav-label">资金中心</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>我的账户<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">我要充值</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我要提款</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我要付款</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">支付密码</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>账户管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">账户余额</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">收支明细</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">锁定明细</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">出入金明细</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>基本设置<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">权限设置</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-cloud"></i> <span class="nav-label">港融云贷通</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">融资管理 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li><a class="J_menuItem" href="#">我的授信</a></li>
+                                <li><a class="J_menuItem" href="#">我的贷款记录</a></li>
+                                <li><a class="J_menuItem" href="#">我的还款记录</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">交易综合查询 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li><a class="J_menuItem" href="#">交易查询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sun-o"></i> <span class="nav-label">EDI系统</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>EDI报文录入<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">装箱单报文</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">盘锦空箱单报文</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">空箱单报文（sf）</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">空箱单报文（wl）</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">装箱单报文（sf）</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">装箱单报文（wl）</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">出口船舶报文</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">充值及车辆分配</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">出口空箱单报文</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>EDI查询服务<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">箱动态</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">货动态</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">自动放单报文查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">空箱单报文查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">报文入库查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">装箱单报文动态</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">装箱单报文查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">出口船舶对照</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">进出门报文查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="J_menuItem"><i class="fa fa-truck"></i> <span class="nav-label">集装箱平台</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>车队管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">接单确认</a>
+                                </li>
+                                <li>
+                                    <a href="listall.do.html" class="J_menuItem">提箱计划</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">结算管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">车辆调度</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>综合信息查询 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">箱动态查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>全程物流 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">车辆GPS查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">全程物流查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">发货委托</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>作业动态<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">作业动态</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hand-pointer-o"></i> <span class="nav-label">预录入系统</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>缴费<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">缴费管理</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">补录缴费</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>EDI装箱单（新）<span
+                                    class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">装箱单查询</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>全程物流 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">车辆GPS查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">全程物流查询</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">发货委托</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>作业动态<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">作业动态</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-ship"></i> <span class="nav-label">船舶服务</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>结算管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">结算管理</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>预报船 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">预报船</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">船档案</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">用户信息修改</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>装卸船清单<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">装卸船清单</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>集装箱船审核<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">船档案审核</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">预报船审核</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>船货代<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">提现管理</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>综合查询<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">会员船舶信息</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">全部船舶信息</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">会员预报船信息</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">船舶计划（会员）</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">船舶计划</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">预抵时间修改</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">船讯网接口</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-asterisk"></i> <span class="nav-label">货代系统</span><span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>基础配置<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">客户资料</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>业务管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">我要发货</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我的委托单</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我的运单</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">我关注的运单</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>结算管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">支付</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">应收应付</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">财务分析</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>账户管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">我的账号</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem">支付流水</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i>对账管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a class="J_menuItem">对账信息</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-institution"></i> <span class="nav-label">订舱</span><span
+                            class="fa arrow"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+    <!--右侧部分开始-->
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <!--<form role="search" class="navbar-form-custom" method="post" action="search_results.html">-->
+                        <!--<div class="form-group">-->
+                            <!--<input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">-->
+                        <!--</div>-->
+                    <!--</form>-->
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i>首页</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user"></i>管理员
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li><a class="J_menuItem" href="form_avatar.html">修改头像</a></li>
+                            <li><a class="J_menuItem" href="profile.html">个人资料</a></li>
+                            <li><a class="J_menuItem" href="contacts.html">联系我们</a></li>
+                            <li><a class="J_menuItem" href="mailbox.html">信箱</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">安全退出</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">退出</a></li>-->
+                </ul>
+            </nav>
+        </div>
+        <!--<div class="row control-tabs">-->
+
+                <!--<ol class="breadcrumb">-->
+                    <!--<i class="fa fa-home" style="font-size: 18px"></i>-->
+                    <!--<li><a href="#">设置中心</a></li>-->
+                    <!--<li><a href="#">基本管理</a></li>-->
+                    <!--<li class="active">店员管理</li>-->
+                <!--</ol>-->
+
+        <!--</div>-->
+        <div class="row content-tabs">
+            <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+            </button>
+            <nav class="page-tabs J_menuTabs">
+                <div class="page-tabs-content">
+                    <a href="javascript:;" class="active J_menuTab" data-id="index.html">首页</a>
+                </div>
+            </nav>
+            <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
+
+                </button>
+                <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                    <li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+                    </li>
+                    <li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+        </div>
+        <div class="row J_mainContent" id="content-main">
+            <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="list.do.html" frameborder="0" data-id="list.do.html"></iframe>
+        </div>
+        <div class="footer">
+            <div class="pull-right">&copy; 2017 <a href="#" target="_blank">ganggangwang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="js/plugins/layer/layer.min.js"></script>
+<script src="js/hplus.min.js"></script>
+<script src="js/contabs.min.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+</body>
+
+</html>

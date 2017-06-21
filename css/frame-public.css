@@ -1,0 +1,116 @@
+@charset "UTF-8";
+body {
+  font-family: 微软雅黑;
+  color: #000; }
+
+.color-red {
+  color: #f00; }
+
+.color-orange {
+  color: #FF6800; }
+
+.mg-bt-15 {
+  margin: 0 15px; }
+
+.mg-rl-15 {
+  margin: 0 15px; }
+
+.mg-t-20 {
+  margin-top: 20px; }
+
+.mg-t-15 {
+  margin-top: 15px; }
+
+.mg-t-10 {
+  margin-top: 10px; }
+
+.mg-b-20 {
+  margin-bottom: 20px; }
+
+.mg-b-10 {
+  margin-bottom: 10px; }
+
+.mg-r-10 {
+  margin-right: 10px; }
+
+.mg-r-40 {
+  margin-right: 40px; }
+
+.mg-l-15 {
+  margin-left: 15px; }
+
+.gray-bg {
+  background-color: #f3f5f9; }
+
+.wrapper-content {
+  padding: 10px; }
+
+.ibox {
+  margin-bottom: 15px; }
+
+.ibox-content {
+  padding: 0;
+  border-style: none;
+  overflow: hidden; }
+
+.ibox-cont {
+  padding: 10px; }
+
+body.mini-navbar .nav-header {
+  padding: 0;
+  background-color: #03395f; }
+
+.navbar-static-side {
+  background: #0e4e7c; }
+  .navbar-static-side .nav-header {
+    padding: 33px 25px;
+    background: #02385e;
+    border-bottom: 1px solid #03395f;
+    color: #fff;
+    font-size: 20px;
+    text-align: center; }
+    .navbar-static-side .nav-header .logo-element img {
+      width: 60%; }
+  .navbar-static-side .nav > li.active {
+    border-left: 0;
+    background: #03395f; }
+
+.navbar-default .nav > li > a:focus {
+  background: #0e4e7c; }
+.navbar-default .nav > li > a:hover {
+  background: #0e4e7c; }
+
+.navbar-header {
+  width: 50%; }
+  .navbar-header .btn-primary {
+    background: none !important;
+    border: none !important;
+    color: #777; }
+  .navbar-header .btn-primary.active, .navbar-header .btn-primary:active, .navbar-header .btn-primary:focus, .navbar-header .btn-primary:hover, .navbar-header .open .dropdown-toggle.btn-primary {
+    color: #777; }
+
+.nav.navbar-top-links li a {
+  padding: 20px 40px;
+  min-height: 50px; }
+
+@media (max-width: 768px) {
+  .nav.navbar-top-links li a {
+    padding: 20px 20px; } }
+.nav.navbar-right > li > a {
+  color: #777; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  color: #000; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  color: #000; }
+
+.navbar .dropdown-menu {
+  width: 122px;
+  padding: 0;
+  margin-top: 0; }
+  .navbar .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0; }
+
+/*# sourceMappingURL=frame-public.css.map */

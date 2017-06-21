@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港港网</title>
+    <meta name="keywords" content="港港网">
+    <meta name="description" content="物流电商港港网">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--add-layout.css-->
+    <link href="css/layout.css" rel="stylesheet">
+    <!--datepicker-->
+    <link href="css/plugins/datepick/need/laydate.css" rel="stylesheet">
+    <link href="css/plugins/datepick/skins/default/laydate.css" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content index">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox float-e-margins">
+                <ol class="breadcrumb">
+                    <li><a href="#">交易服务</a></li>
+                    <li><a href="#">我是买家</a></li>
+                    <li class="active">采购服务</li>
+                </ol>
+            </div>
+
+            <div class="ibox float-e-margins public-list-1">
+                <!--01-->
+                <div class="ibox-content search-form mg-t-20">
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">合同：</label>
+                            <div class="col-sm-2">
+                                <input type="text" placeholder="请输入信息内容" class="form-control">
+                            </div>
+                            <label class="col-sm-1 control-label">状态：</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option value="请选择">请选择</option>
+                                    <option value="供应">供应</option>
+                                    <option value="求购">求购</option>
+                                    <option value="运单">运单</option>
+                                    <option value="运力">运力</option>
+                                </select>
+                            </div>
+                            <label class="col-sm-1 control-label">生成日期：</label>
+                            <div class="col-sm-2">
+                                <input type="text" name="startTime" id="datetimepicker3" class="form-control startTime"
+                                       placeholder="生成开始日期">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" name="startTime" id="datetimepicker4" class="form-control startTime"
+                                       placeholder="生成结束日期">
+                            </div>
+                            <button type="button" class="btn btn-primary">查询</button>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">卖家：</label>
+                            <div class="col-sm-2">
+                                <input type="text" placeholder="请输入信息内容" class="form-control">
+                            </div>
+                            <label class="col-sm-1 control-label">品名：</label>
+                            <div class="col-sm-2">
+                                <input type="text" placeholder="请输入信息内容" class="form-control">
+                            </div>
+                            <label class="col-sm-1 control-label">排序：</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option value="请选择">请选择</option>
+                                    <option value="日期">日期</option>
+                                    <option value="信息种类">信息种类</option>
+                                </select></div>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option value="请选择">请选择</option>
+                                    <option value="升序">升序</option>
+                                    <option value="降序">降序</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-primary">清空</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--02-->
+                <div class="ibox-content mg-t-20 public-list-3">
+
+                    <table id="listable" class="table table-hover table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>合同信息</th>
+                            <th>日期</th>
+                            <th>吨量（吨）</th>
+                            <th>单价（元/吨）</th>
+                            <th>总货价（元）</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--第一行-->
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                <p>合同：<a href="#" data-toggle="modal" data-target="#myModal1">HT16031900001</a></p>
+                                <p>卖家：营口港融大数据股份有限公司</p>
+                                <p>商品：营口市/粮食主要作物/玉米</p>
+                            </td>
+                            <td>
+                                <p>付款截止日：2016.03.20</p>
+                                <p>验货截止日：2016.03.23</p>
+                                <p>验票截止日：2016.03.28</p>
+                            </td>
+                            <td>2,000.000</td>
+                            <td><span class="color-orange">2,500.00</span></td>
+                            <td><span class="color-orange">5,000,000.00</span></td>
+                            <td>订单已生成</td>
+                            <td><a href="#" data-toggle="modal" data-target="#myModal1">查看合同</a></td>
+                        </tr>
+                        <!--第二行-->
+                        <tr>
+                            <td>02</td>
+                            <td>
+                                <p>合同：<a href="#">HT16031900001</a></p>
+                                <p>卖家：营口港融大数据股份有限公司</p>
+                                <p>商品：营口市/粮食主要作物/玉米</p>
+                            </td>
+                            <td>
+                                <p>付款截止日：2016.03.20</p>
+                                <p>验货截止日：2016.03.23</p>
+                                <p>验票截止日：2016.03.28</p>
+                            </td>
+                            <td>2,000.000</td>
+                            <td><span class="color-orange">2,500.00</span></td>
+                            <td><span class="color-orange">5,000,000.00</span></td>
+                            <td>订单已生成</td>
+                            <td><a href="#">查看合同</a></td>
+                        </tr>
+                        <!--第三行-->
+                        <tr>
+                            <td>03</td>
+                            <td>
+                                <p>合同：<a href="#">HT16031900001</a></p>
+                                <p>卖家：营口港融大数据股份有限公司</p>
+                                <p>商品：营口市/粮食主要作物/玉米</p>
+                            </td>
+                            <td>
+                                <p>付款截止日：2016.03.20</p>
+                                <p>验货截止日：2016.03.23</p>
+                                <p>验票截止日：2016.03.28</p>
+                            </td>
+                            <td>2,000.000</td>
+                            <td><span class="color-orange">2,500.00</span></td>
+                            <td><span class="color-orange">5,000,000.00</span></td>
+                            <td>订单已生成</td>
+                            <td><a href="#">查看合同</a></td>
+                        </tr>
+                        <!--第四行-->
+                        <tr>
+                            <td>04</td>
+                            <td>
+                                <p>合同：<a href="#">HT16031900001</a></p>
+                                <p>卖家：营口港融大数据股份有限公司</p>
+                                <p>商品：营口市/粮食主要作物/玉米</p>
+                            </td>
+                            <td>
+                                <p>付款截止日：2016.03.20</p>
+                                <p>验货截止日：2016.03.23</p>
+                                <p>验票截止日：2016.03.28</p>
+                            </td>
+                            <td>2,000.000</td>
+                            <td><span class="color-orange">2,500.00</span></td>
+                            <td><span class="color-orange">5,000,000.00</span></td>
+                            <td>订单已生成</td>
+                            <td><a href="#">查看合同</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!--合同信息-->
+                    <div class="modal inmodal fade" id="myModal1" tabindex="-1" role="dialog"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span
+                                            aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                    </button>
+                                    <h4 class="modal-title">合同信息</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="text-center">营口港现代物流服务平台电子购销合同</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--列表分页-->
+                    <div class="row pageframe mg-t-20">
+                        <div class="col-sm-6">
+                            显示 1 到 10 项，共 60 项
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-right">
+                                <ul class="pagination">
+                                    <li class="paginate_button"><a href="#">首页</a></li>
+                                    <li class="paginate_button previous disabled"><a href="#">上一页</a></li>
+                                    <li class="paginate_button active"><a href="#">1</a></li>
+                                    <li class="paginate_button "><a href="#">2</a></li>
+                                    <li class="paginate_button "><a href="#">3</a></li>
+                                    <li class="paginate_button "><a href="#">4</a></li>
+                                    <li class="paginate_button "><a href="#">5</a></li>
+                                    <li class="paginate_button "><a href="#">6</a></li>
+                                    <li class="paginate_button next"><a href="#">下一页</a></li>
+                                    <li class="paginate_button"><a href="#">末页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/plugins/datepick/laydate.dev.js"></script>
+
+<script>
+    //选择日期
+    laydate({
+        elem: '#datetimepicker3'
+    });
+    laydate({
+        elem: '#datetimepicker4'
+    });
+
+</script>
+</body>
+
+</html>
